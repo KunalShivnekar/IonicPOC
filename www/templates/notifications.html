@@ -1,0 +1,29 @@
+<ion-view view-title="Notifications">
+    <ion-content>
+        <ion-refresher pulling-text="Pull to refresh notifications" on-refresh="doRefresh()">
+        </ion-refresher>
+
+            <div  style="margin-top:10px;margin-left:5px" >
+            <div ng-repeat="notifications in groupedNotifications" id={{notifications.group}}>
+                <!--<ion-item class="item-stable" id="rcorners">-->
+                    <p class="mark"><i>
+                        {{notifications.group}}
+                    </i></p>
+               <!-- </ion-item>-->
+                <!--<ion-item class="item-accordion"
+                          style="background-color:grey"
+                          id="rcorners"
+                          ng-repeat="notification in notifications.notifications">
+                    <ion-label style="color:white">{{notification.name}}</ion-label> &nbsp; &nbsp; &nbsp;
+
+                </ion-item>-->
+                <div style="margin:10px;">
+                    <ul style="background-color:  #333333;; padding-left:5px; "ng-repeat="notification in notifications.notifications">
+                        <li style=" margin-top:2px; color:white;padding:10px">{{notification.name}}</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+    </ion-content>
+</ion-view>

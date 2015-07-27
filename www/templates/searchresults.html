@@ -1,0 +1,14 @@
+<ion-view view-title="Search Results">
+  <ion-content>
+      <ion-scroll direction="x" class="wide-as-needed">
+        <table  class="table">
+            <tr ng-repeat="employee in employees |filter:searchFilter">
+                <td  class="table_cell">{{employee.name}}</td>
+                <td  class="table_cell">{{employee.firstName}}</td>
+                <td  class="table_cell">{{employee.lastName}}</td>
+                <td  class="table_cell">{{employee.emailID}}</td>
+            </tr>
+        </table>
+      </ion-scroll>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,28 @@
+<ion-view view-title="Conference Room Booking">
+    <ion-content>
+        <label class="item item-input">
+            <span class="input-label">Event</span>
+            <input type="text" name='event' ng-model="booking.event" style="text-align: center;">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Location</span>
+            <input type="text" name='location' ng-model="booking.location" style="text-align: center;">
+            <button>Add Room</button>
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Attendees</span>
+            <input type="text" name='attendees' ng-model="booking.attendees" style="text-align: center;">
+        </label>
+
+        <label class="item item-input">
+            <span class="input-label">Start</span>
+            <input type="datetime-local">
+        </label>
+
+        <label class="item item-input">
+            <span class="input-label">Duration</span>
+            <input type="number">
+            <span class="input-label">Minutes</span>
+        </label>
+    </ion-content>
+</ion-view>

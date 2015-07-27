@@ -1,0 +1,18 @@
+<ion-view view-title="Buddy Referral">
+   <ion-content >
+       <ion-scroll direction="x|y" class="wide-as-needed">
+        <table class="table">
+            <tr>
+                <th><b>Designation</b></th>
+                <th><b>SkillSet</b></th>
+                <th><b>Experience</b></th>
+            </tr>
+            <tr ng-repeat="opening in openings">
+                <td  class="table_cell">{{opening.designation}}</td>
+                <td  class="table_cell">{{opening.skillset}}</td>
+                <td  class="table_cell">{{opening.yearsofexp}}</td>&nbsp;&nbsp;
+            </tr>
+        </table>
+       </ion-scroll>
+    </ion-content>
+</ion-view>

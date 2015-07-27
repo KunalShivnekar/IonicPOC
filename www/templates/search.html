@@ -1,0 +1,52 @@
+<ion-view view-title="Search">
+  <ion-content>
+      <div class="list list-inset">
+        <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search" ng-model="searchUsing">
+        </label>
+      </div>
+      <table ng-hide="showResultsSearchTable">
+        <tr ng-repeat="employee in employees | filter:searchUsing">
+            <td  class="table_cell">{{employee.name}}</td>
+            <td  class="table_cell">{{employee.emailID}}</td>
+        </tr>
+      </table>
+    </ion-content>
+</ion-view>
+
+<!--
+<ion-view id="search1" view-title=" Employee Search" >
+    <ion-content  style="padding:20px;>
+
+          <div class="list >
+
+
+            <label class="item item-input">
+
+                <input type="text" ng-model="empData.empID" placeholder="EmpId" style="text-align: center;" >
+            </label>
+            <label class="item item-input">
+
+                <input type="text" ng-model="empData.firstName" placeholder="FirstName" style="text-align: center;">
+            </label>
+            <label class="item item-input">
+
+                <input type="text" ng-model="empData.lastName" placeholder="LastName" style="text-align: center;">
+            </label>
+            <label class="item">
+                <button class="button button-block button-positive" ng-click="searchEmployees()">Search</button>
+            </label>
+        </div>
+
+        <ion-scroll direction="x" class="wide-as-needed">
+            <table  class="table">
+                <tr ng-repeat="employee in employees | filter:{firstName: empData.firstName, lastName: empData.lastName, empID: empData.empID}">
+                    <td  class="table_cell">{{employee.empID}}</td>
+                    <td  class="table_cell">{{employee.name}}</td>
+                    <td  class="table_cell">{{employee.emailID}}</td>
+                </tr>
+            </table>
+        </ion-scroll>
+    </ion-content>
+</ion-view>-->

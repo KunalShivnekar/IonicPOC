@@ -1,0 +1,23 @@
+<ion-view view-title="Key Contacts">
+    <ion-content>
+        <ion-list id="keycontact" >
+            <div>
+                <div ng-repeat="department in departments">
+                <ion-item class="item-stable " id="rcorners"
+                          ng-click="toggleDepartment(department)"
+                          ng-class="{active: isDepartmentShown(department)}">
+                    <i class="icon"  ng-class="isDepartmentShown(department) ? 'ion-arrow-down-b' : 'ion-arrow-right-b'"></i>
+                    &nbsp;
+                     {{department.name}}
+                </ion-item>
+                <ion-item class="item-accordion " style="background-color:grey" id="rcorners"
+                          ng-repeat="item in department.contacts"
+                          ng-show="isDepartmentShown(department)">
+                    <ion-label style="color:white"><b>Name:</b>  {{item.contactName}}</ion-label> &nbsp; &nbsp; &nbsp;
+                    <ion-label style="color:white"><b>Email:</b> {{item.contactID}}</ion-label>
+                </ion-item>
+            </div>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

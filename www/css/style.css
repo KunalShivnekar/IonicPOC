@@ -1,0 +1,250 @@
+/* Empty. Add your own CSS if you like */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: #b0e0e6;
+    width:50%;*/
+    text-align:center;
+}
+
+table,  td {
+  border: 1;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table th
+{
+	background-color: brown;
+	color:white;
+	height: 40px;
+	padding-top:11px;
+
+	text-align: center;
+	
+
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.table{
+    display:table;
+    width:100%;
+    table-layout:fixed;
+    margin-top:10px;
+      margin-left: 4px;
+    margin-right: 3px;
+  
+     border: groove 5px black;
+}
+.table_cell{
+    display:table-cell;
+    width:350px;
+    border:solid black 1px;
+    text-align:center;
+}
+
+
+label.item.has-error {
+  border-bottom: 2px solid red;
+}
+
+label.item.has-error-lr {
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+
+label.item.valid-lr {
+  border-left: 2px solid green;
+  border-right: 2px solid green;
+}
+
+.form-errors {
+  margin: 5px 0
+}
+
+.form-error {
+  padding: 2px 0 2px 16px;
+  color: red;
+}
+
+
+.sidemenustyle
+{
+background-color:maroon;
+}
+.item-complex .item-content, .item-radio .item-content {
+	background-color:  #333333;
+
+  }
+  .menu-left {
+
+  background-color: #333333;
+}
+a.item-content {
+
+  color: white;
+  font-size: small;
+
+}
+.signup-background {
+    background-image: url('/img/login-samp.png');
+    background-repeat: no-repeat;
+ }
+ .space {
+        margin: 0px  10px 0px 5px;
+}
+
+.menu .bar-header {
+ background-color:#f8f8f8
+}
+
+
+#search1 .scroll
+{
+	border:ridge 3px orange;
+}
+
+ .login {
+    background: url(../img/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 80%;
+    height: 246px;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+}
+
+
+ .scroll-content {
+    background: transparent ;
+    background-position: center;
+    background-size: cover;
+ }
+
+ body {
+     background-color: white;
+ }
+ #nav {
+     line-height:30px;
+     border:Solid 1px;
+     border-color:Orange;
+     background-color:white;
+
+    align:center;
+     padding:5px ;
+
+ }
+
+.active.button-positive.button, .activated.button-positive.button {
+   border-color: #F58E38;
+    background-color:  #F58E38;
+
+}
+
+ #form_ele{
+
+
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+     -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+
+     text-align: center;
+ padding:60px 10px 20px 10px ;
+
+ }
+
+ .scroll-content {
+  background: rgba(18, 18, 19, 0.64);
+
+}
+#bkgcolor   {
+
+ background-image: url('/img/download.jpg');
+    background-repeat: no-repeat;
+
+}
+ /* Chrome, Safari, Opera */
+ @-webkit-keyframes example {
+
+     25%  { top:10px;}
+
+ }
+ 
+ .input-label {
+   text-align: left !important;
+ }
+ .button.button-positive
+ {
+ border-color: #F58E38;
+ background-color:#F58E38;
+ }
+
+#keycontact .list  {
+ 
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+ 
+}
+
+#notifications .list  {
+
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+
+}
+
+#rcorners {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px; 
+    
+}
+
+
+
+
+ .mark {
+
+    color: white;
+
+    font-size:15px;
+
+    text-align:left;
+
+    padding-left:10px;
+
+    text-style:bold ;
+
+    text-decoration: underline;
+
+}
+
+/*
+
+ body        {
+     background: url('/img/Sample.png');
+     background-attachment:fixed;
+         background-position: center;
+ }
+ .pane, .menu, .view, .list, .item       {
+     background: transparent;
+ }
+*/
+
+/*.modal-backdrop, .modal-backdrop-bg {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}*/

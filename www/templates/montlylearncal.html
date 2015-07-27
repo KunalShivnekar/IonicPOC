@@ -1,0 +1,17 @@
+<ion-view view-title="Monthly Learning Calender">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="training in trainings" type="item-text-wrap" href="#/app/montlylearncal/{{training.id}}">
+        <img ng-src="{{training.pic}}" > 
+        <h2 style="color:white">{{training.category}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <ion-option-button class="button-assertive" ng-click="remove(training)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
+
+
